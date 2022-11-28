@@ -279,8 +279,7 @@ class MobileScannerController {
             .toList();
         _barcodesController.add(
           BarcodeCapture(
-            barcodes: parsed,
-            image: event['image'] as Uint8List?,
+            barcodes: parsed
           ),
         );
         break;
